@@ -1,0 +1,21 @@
+{
+  "version": "demo-1",
+  "category": "Commercial Solar Installation",
+  "project": {"budget_ceiling_cad": 260000, "max_weeks": 16, "min_kw": 100, "experience_window_years": 5},
+  "mandatory": [
+    {"id": "licence", "label": "Ontario electrical contractor licence held by the bidder", "fields": ["licence_held_by_bidder"]},
+    {"id": "wsib_insurance", "label": "WSIB clearance and $5M liability insurance", "fields": ["wsib_clearance", "liability_5m"]}
+  ],
+  "weighted": [
+    {"id": "experience", "label": "Relevant experience", "weight": 30,
+     "rule": "bands on qualifying installs: >=10 ->100, 7-9 ->80, 4-6 ->60, 1-3 ->30, 0 ->0"},
+    {"id": "price", "label": "Price", "weight": 25,
+     "rule": "100 * lowest eligible price / bidder price; price above ceiling -> ineligible"},
+    {"id": "timeline", "label": "Timeline", "weight": 15,
+     "rule": "100 * shortest eligible weeks / bidder weeks; weeks above max or not stated -> 0"},
+    {"id": "warranty", "label": "Warranty", "weight": 15,
+     "rule": "50% panel (25 yrs or more = 100, else years/25) + 50% workmanship (years / longest eligible workmanship years)"},
+    {"id": "team", "label": "Team and approach", "weight": 15,
+     "rule": "25 points each: named lead, crew described, safety plan, monitoring plan"}
+  ]
+}
