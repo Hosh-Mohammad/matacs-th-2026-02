@@ -1,0 +1,37 @@
+[
+  {
+    "proposal": "A",
+    "rank": 1,
+    "status": "ranked",
+    "score": 98.0,
+    "reason": "Passes both gates; strongest on experience (100), weakest on warranty (92)."
+  },
+  {
+    "proposal": "E",
+    "rank": 2,
+    "status": "ranked",
+    "score": 91.7,
+    "reason": "Passes both gates; strongest on warranty (100), weakest on experience (80)."
+  },
+  {
+    "proposal": "D",
+    "rank": 3,
+    "status": "ranked",
+    "score": 76.2,
+    "reason": "Passes both gates; strongest on experience (100), weakest on timeline (0). Schedule not stated (timeline scored 0); a stated schedule of 12+ weeks would still leave it behind E."
+  },
+  {
+    "proposal": "B",
+    "rank": null,
+    "status": "ineligible",
+    "score": null,
+    "reason": "Fails mandatory licence gate: electrical work is subcontracted and the licence holder is only named after award, so a human can only override if the admin allows it."
+  },
+  {
+    "proposal": "C",
+    "rank": null,
+    "status": "flagged",
+    "score": 81.8,
+    "reason": "Provisional 81.8 on merit, but the text contains an instruction aimed at automated reviewers; ignored for scoring, withheld from ranking until a human clears or disqualifies it (also: experience window unconfirmed)."
+  }
+]
